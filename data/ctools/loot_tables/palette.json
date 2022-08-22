@@ -1,0 +1,49 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:splash_potion",
+            "functions": [
+                {
+                "function":"minecraft:set_nbt",
+                "tag":"{nsk:ct,ct_process:i,ct_type:palette,CustomPotionColor:16777215,HideFlags:32,Enchantments:[{\"www\":\"www\"}]}"
+                },
+                {
+                  "function":"minecraft:set_lore",
+                  "lore":[
+                    {
+                      "text":"Nishiki Tool Kit",
+                      "color": "white",
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                  {
+                    "text": "Tool Palette",
+                    "color": "white",
+                    "italic": false,
+                    "bold":true
+                  }
+                  
+                ]
+              }
+            ]
+          }
+            
+                
+                
+            
+                
+          
+        ]
+      }
+    ]
+  }

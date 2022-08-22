@@ -1,0 +1,8 @@
+{
+	"replace":false,
+	"values":[
+		"nsk:tick",
+		"ctools:tick",
+		"particle:tick"
+	]
+}

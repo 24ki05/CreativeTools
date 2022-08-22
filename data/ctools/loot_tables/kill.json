@@ -1,0 +1,61 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:lingering_potion",
+            "functions": [
+                {
+                "function":"minecraft:set_nbt",
+                "tag":"{nsk:ct,ct_process:c,ct_type:kill,CustomPotionColor:16711705,HideFlags:32}"
+                },
+                {
+                  "function":"minecraft:set_lore",
+                  "lore":[
+                    {
+                      "text":"== HANDLE WITH CARE! ==",
+                      "color": "white",
+                      "italic": false
+                    },{
+                      "text":"[Default] Kill all entities within a radius",
+                      "color": "gray",
+                      "italic": false
+                    },{
+                      "text":"of 3 blocks. (except players)",
+                      "color": "gray",
+                      "italic": false
+                    },
+                    {
+                      "text":"[Shift] Kill only targeted entity.",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                  {
+                    "text": "Kill",
+                    "color": "red",
+                    "italic": false
+                  }
+                  
+                ]
+              }
+            ]
+          }
+            
+                
+                
+            
+                
+          
+        ]
+      }
+    ]
+  }

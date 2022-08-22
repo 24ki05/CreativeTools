@@ -1,0 +1,48 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:lingering_potion",
+            "functions": [
+                {
+                "function":"minecraft:set_nbt",
+                "tag":"{nsk:ct,ct_process:i,ct_type:xp,CustomPotionColor:16449346,HideFlags:32}"
+                },
+                {
+                  "function":"minecraft:set_lore",
+                  "lore":[
+                    {
+                      "text":"0 <-> 99999",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                  {
+                    "text": "xp reset/charge",
+                    "color": "yellow",
+                    "italic": false
+                  }
+                  
+                ]
+              }
+            ]
+          }
+            
+                
+                
+            
+                
+          
+        ]
+      }
+    ]
+  }

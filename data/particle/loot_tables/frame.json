@@ -1,0 +1,57 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:item_frame",
+            "functions": [
+                {
+                "function":"minecraft:set_nbt",
+                "tag":"{nsk:particle,EntityTag:{Item:{id:\"minecraft:white_stained_glass_pane\",Count:1b},Tags:[particle,particle_preparing]},HideFlags:32}"
+                },
+                {
+                  "function":"minecraft:set_lore",
+                  "lore":[
+                    {
+                      "text":"[RClick] 次のパーティクルを表示",
+                      "color": "gray",
+                      "italic": false
+                    },{
+                      "text":"[LClick] 前のパーティクルを表示",
+                      "color": "gray",
+                      "italic": false
+                    },
+                    {
+                      "text":"[台座を破壊] スタンドを回収",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                  {
+                    "text": "Particle Stand",
+                    "color": "white",
+                    "italic": false
+                  }
+                  
+                ]
+              }
+            ]
+          }
+            
+                
+                
+            
+                
+          
+        ]
+      }
+    ]
+  }

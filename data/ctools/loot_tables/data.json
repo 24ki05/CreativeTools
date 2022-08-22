@@ -1,0 +1,57 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:lingering_potion",
+            "functions": [
+                {
+                "function":"minecraft:set_nbt",
+                "tag":"{nsk:ct,ct_process:c,ct_type:data,CustomPotionColor:16756506,HideFlags:32}"
+                },
+                {
+                  "function":"minecraft:set_lore",
+                  "lore":[
+                    {
+                      "text":"== Creative Only ==",
+                      "color": "white",
+                      "italic": false
+                    },{
+                      "text":"[Throw] NoAI on/off",
+                      "color": "gray",
+                      "italic": false
+                    },
+                    {
+                      "text":"[Offhand+Shift] Get nbt \"SelectedItem\"",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                  {
+                    "text": "Entity Data Tool",
+                    "color": "gold",
+                    "italic": false
+                  }
+                  
+                ]
+              }
+            ]
+          }
+            
+                
+                
+            
+                
+          
+        ]
+      }
+    ]
+  }
