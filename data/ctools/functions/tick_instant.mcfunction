@@ -13,6 +13,6 @@ execute as @e[nbt={Item:{tag:{ct_type:kill}}}] run function ctools:kill/check
 
 execute as @e[nbt={Item:{tag:{ct_type:platform}}}] run function ctools:platform/check
 
-execute as @e[nbt={Item:{tag:{ct_type:tp}}}] run function ctools:tp/tp
+execute as @e[nbt={Item:{tag:{ct_type:tp}}}] at @s run function ctools:tp/tp
 
 execute as @e[nbt={Item:{tag:{ct_type:data}}}] at @p run function ctools:data/check
